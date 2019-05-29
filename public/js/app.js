@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit',(e)=>{
         msg1.textContent=data.error
        }
        else{
-        msg1.textContent='Temperature in '+loc+' is'+data.temp
+        msg1.textContent='Temperature in '+loc+' is '+data.temp
        }
    })
 })
