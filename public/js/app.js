@@ -1,3 +1,4 @@
+import { SSL_OP_MSIE_SSLV2_RSA_PADDING } from "constants";
 
 const weatherForm=document.querySelector('form')
 const search=document.querySelector('input')
@@ -16,6 +17,7 @@ weatherForm.addEventListener('submit',(e)=>{
        }
        else{
         msg1.textContent='Temperature in '+loc+' is '+data.temp
+        msg2.textContent='Rain for the day '+data.rain+ ' Summary '+data.summary
        }
    })
 })
